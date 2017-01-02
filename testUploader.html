@@ -1,16 +1,15 @@
-<form file-upload="$ctrl.options" 
-enctype="multipart/form-data" name="steponeForm" novalidate autocomplete="off">
-
-  <span class="btn btn-success fileinput-button">
-    <i class="glyphicon glyphicon-cloud-upload"></i>
-  <span>Upload video</span>
-  <input type="file" name="file" ng-disabled="disabled">
-  </span>
-
-</form>
-
 <div class='row'>
-  <div class='col-sm-12'>
+  <div class='col-sm-3'>
+    <form file-upload="$ctrl.options" enctype="multipart/form-data"
+          name="steponeForm" novalidate autocomplete="off">
+        <span class="btn btn-success fileinput-button">
+          <i class="glyphicon glyphicon-cloud-upload"></i>
+          <span>Upload video</span>
+          <input type="file" name="file" ng-disabled="disabled">
+        </span>
+      </form>
+  </div>
+  <div class='col-sm-9'>
     <div class='progress'>
       <div class="progress-bar" 
         role="progressbar" aria-valuenow="{{$ctrl.progress}}" aria-valuemin="0" 
@@ -20,3 +19,12 @@ enctype="multipart/form-data" name="steponeForm" novalidate autocomplete="off">
     </div>
   </div>
 </div>
+<div class='row'>
+  <div class='col-sm-12'>
+    <div class="alert alert-danger" role="alert" ng-if="$ctrl.error">Error: {{$ctrl.error}}</div>
+    <div id="{{ 'wistia_' + $ctrl.mediaHashId }}" class="wistia_embed"
+        style="width:398px;height:224px;" ng-if="$ctrl.mediaHashId"></div>
+  </div>
+</div>
+
+<script charset="ISO-8859-1" src="//fast.wistia.com/assets/external/E-v1.js" async></script>
