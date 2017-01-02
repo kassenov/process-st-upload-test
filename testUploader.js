@@ -34,7 +34,7 @@ function TestUploaderController($scope, $timeout) {
       }, 100);
     },
     fail: function (e, data) {
-      ctrl.error = data.errorThrown;
+      ctrl.error = data.errorThrown + " - " + data.result.error;
     }
   };
 }
