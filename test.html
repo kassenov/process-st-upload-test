@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html lang="en-us">
+
+<head>
+<meta charset="utf-8">
+<title>Process Street Test</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://code.angularjs.org/snapshot/angular.min.js"></script>
+<script src="https://blueimp.github.io/JavaScript-Load-Image/js/load-image.all.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="jquery-file-upload/jquery.ui.widget.js"></script>
+<script src="jquery-file-upload/jquery.iframe-transport.js"></script>
+<script src="jquery-file-upload/jquery.fileupload.js"></script>
+<script src="jquery-file-upload/jquery.fileupload-process.js"></script>
+<script src="jquery-file-upload/jquery.fileupload-image.js"></script>
+<script src="jquery-file-upload/jquery.fileupload-audio.js"></script>
+<script src="jquery-file-upload/jquery.fileupload-video.js"></script>
+<script src="jquery-file-upload/jquery.fileupload-validate.js"></script>
+<script src="jquery-file-upload/jquery.fileupload-angular.js"></script>
+<script src="index.js"></script>
+<script src="testUploader.js"></script>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="jquery-file-upload/css/jquery.fileupload.css">
+<link rel="stylesheet" href="jquery-file-upload/css/jquery.fileupload-ui.css">
+</head>
+<body ng-app="testApp">
+<div ng-controller="MainCtrl as ctrl">
+	<test-uploader hero="ctrl.hero"></test-uploader>
+</div>
+
+</body>
+</html>
