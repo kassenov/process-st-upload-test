@@ -8,3 +8,15 @@ enctype="multipart/form-data" name="steponeForm" novalidate autocomplete="off">
   </span>
 
 </form>
+
+<div class='row'>
+  <div class='col-sm-12'>
+    <div class='progress'>
+      <div class="progress-bar" 
+        role="progressbar" aria-valuenow="{{$ctrl.progress}}" aria-valuemin="0" 
+        aria-valuemax="100" ng-style="{width : ( $ctrl.progress + '%' ) }">
+          {{$ctrl.progress}}% Complete
+      </div>
+    </div>
+  </div>
+</div>
